@@ -1,0 +1,28 @@
+/* Keep the statistics banner intentionally dark in both themes. */
+.stats-band {
+  background: linear-gradient(105deg, #162946, #1b304e);
+  color: #f6f7fb;
+}
+
+.stats-band .stat span,
+.stats-band .stats-note {
+  color: rgba(246, 247, 251, .72);
+}
+
+.stats-band .stat-divider {
+  background: rgba(246, 247, 251, .2);
+}
+
+:root[data-theme='dark'] .stats-band {
+  background: linear-gradient(105deg, #1b2536, #202d42);
+  color: #f1f4fa;
+}
+
+:root[data-theme='dark'] .stats-band .stat span,
+:root[data-theme='dark'] .stats-band .stats-note {
+  color: rgba(241, 244, 250, .72);
+}
+
+:root[data-theme='dark'] .stats-band .stat-divider {
+  background: rgba(241, 244, 250, .2);
+}

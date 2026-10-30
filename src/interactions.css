@@ -1,0 +1,77 @@
+/* Small, consistent motion cues for navigation and controls. */
+body,
+.site-header,
+.project-card,
+.category-chip,
+.search-wrap,
+.theme-toggle,
+.material-link,
+.primary-button {
+  transition-property: color, background-color, border-color, box-shadow, transform;
+  transition-duration: 220ms;
+  transition-timing-function: cubic-bezier(.2, .75, .25, 1);
+}
+
+.hero-copy,
+.hero-visual,
+.stats-inner,
+.section-heading,
+.filter-row,
+.detail-page,
+.not-found {
+  animation: enter-soft 560ms cubic-bezier(.2, .75, .25, 1) both;
+}
+
+.hero-visual { animation-delay: 90ms; }
+.stats-inner { animation-delay: 70ms; }
+.section-heading { animation-delay: 100ms; }
+.filter-row { animation-delay: 145ms; }
+.detail-page { animation-duration: 480ms; }
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:active,
+.visit-link:active,
+.hero-cta:active,
+.primary-button:active,
+.next-link:active {
+  transform: scale(.97);
+}
+
+.project-card:active {
+  transform: translateY(-1px) scale(.99);
+  transition-duration: 90ms;
+}
+
+.category-chip:active,
+.theme-toggle:active,
+.empty-state button:active {
+  transform: scale(.95);
+  transition-duration: 90ms;
+}
+
+:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--purple) 58%, transparent);
+  outline-offset: 3px;
+}
+
+.search-wrap:focus-within {
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+@keyframes enter-soft {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}

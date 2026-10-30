@@ -1,0 +1,8 @@
+[
+  { "id": "mlops", "title": "MLOps", "category": "MLOps", "summary": "Project description coming soon.", "description": "", "team": ["Disha Jain", "Dnyaneshwari Gogawale", "Ritik Ranjan", "Pradeep Biswas"], "techStack": [], "materials": [] },
+  { "id": "webflow-automation", "title": "Automating Webflow for Website/PPT Generation", "category": "Automation", "summary": "Project description coming soon.", "description": "", "team": ["Anushka Singh", "Rudolph Smith", "Samit Tungare"], "techStack": [], "materials": [] },
+  { "id": "federated-credit-risk", "title": "Privacy-Preserving Credit Risk Assessment Using Federated Learning", "category": "Privacy & Federated Learning", "summary": "Project description coming soon.", "description": "", "team": ["Ayaana Talwar", "Ashika Yadav", "Aarav Sathe", "Nevin Abraham"], "techStack": [], "materials": [] },
+  { "id": "ai-devops-incident-copilot", "title": "AI DevOps Incident Copilot", "category": "DevOps & AIOps", "summary": "Project description coming soon.", "description": "", "team": ["Saatvik Madan", "Tanmay Saxena", "Meet Chhabhaiya", "KS Arjun"], "techStack": [], "materials": [] },
+  { "id": "adaptive-cicd-pipeline", "title": "AI-Driven Adaptive CI/CD Pipeline", "category": "DevOps & AIOps", "summary": "Project description coming soon.", "description": "", "team": ["Laksh Ratnawat", "Daksh Ratnawat", "Anandita Babar", "Saksham Ajmera"], "techStack": [], "materials": [] },
+  { "id": "rag-mitigation", "title": "Mitigation in Retrieval-Augmented Generation", "category": "Generative AI & RAG", "summary": "Project description coming soon.", "description": "", "team": ["Ishan Magarde", "Naitik Rathore"], "techStack": [], "materials": [] }
+]
