@@ -16,6 +16,7 @@ function ScrollManager() {
     root.style.scrollBehavior = 'auto'
     window.history.scrollRestoration = 'manual'
 
+    // Restore saved scroll position.
     const saved = sessionStorage.getItem(`showcase-scroll:${location.key}`)
     const requested = location.state?.restoreScrollY
     const y = typeof requested === 'number'
