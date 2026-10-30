@@ -26,3 +26,16 @@
 :root[data-theme='dark'] .stats-band .stat-divider {
   background: rgba(241, 244, 250, .2);
 }
+
+/* On standard desktop CSS viewports, match the comfortable 125% presentation
+   while retaining the original responsive breakpoints for smaller screens. */
+@media (min-width: 1200px) and (max-width: 1550px) {
+  #root {
+    width: 100%;
+    zoom: 1.25;
+  }
+
+  .site-header {
+    padding-inline: max(28px, calc((80% - 1120px) / 2));
+  }
+}
